@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+    background-color: #f1faee;
+}
+
+header {
+    background-color: transparent;
+    nav {
+        padding: 24px 72px;
+        margin: 0 auto;
+        max-width: 1440px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            li {
+                margin: 0 24px;
+                a {
+                    font-size: 18px;
+                    font-weight: 400;
+                    text-decoration: none;
+                    color: #457b9d;
+                    &:hover {
+                        color: #1d3557;
+                    }
+                }
+            }
+        }
+    }
+}
+main {
+    background-color: transparent;
+    div {
+        padding: 24px 96px;
+        margin: 0 auto;
+        max-width: 1440px;
+        h1, p {
+            color: #000000;
+        }
+        h1 {
+            font-size: 40px;
+            font-weight: 500;
+            line-height: 48px;
+        }
+        p {
+            font-size: 18px;
+            font-weight: 400;
+            a {
+                text-decoration: none;
+                color: #457b9d;
+                &:hover {
+                    color: #1d3557;
+                }
+            }
+        }
+        form {
+            display: grid;
+            padding: 16px 0;
+            input, select {
+                color: #000000;
+                padding: 16px 24px;
+                margin: 8px 0;
+                font-size: 18px;
+                font-weight: 400;
+                border: 1px solid #73777B;
+                border-radius: 4px;
+                width: 480px;
+                display: flex;
+                justify-content: left;
+                &:focus {
+                    outline: 0;
+                    border: 1px solid #457b9d;
+                }
+                &[type=submit] {
+                    cursor: pointer;
+                    border: 1px solid #457b9d;
+                    background-color: #457b9d;
+                    color: #FFFFFF;
+                    font-weight: 500;
+                    justify-content: center;
+                    &:hover {
+                        border: 1px solid #1d3557;
+                        background-color: #1d3557;
+                    }
+                }
+            }
+        }
+        ul {
+            list-style-type: none;
+            padding: 16px 0;
+            margin: 0;
+            display: grid;
+            li {
+                button {
+                    color: #FFFFFF;
+                    padding: 16px 24px;
+                    margin: 8px 0;
+                    font-size: 18px;
+                    font-weight: 400;
+                    border-radius: 4px;
+                    width: 480px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: auto;
+                    cursor: pointer;
+                    img {
+                        display: grid;
+                        margin: 0 8px;
+                    }
+                    &.solid {
+                        border: 1px solid #457b9d;
+                        background-color: #457b9d;
+                        
+                    }
+                    &.transparent {
+                        border: 1px solid #1d3557;
+                        background-color: #1d3557;
+                    }
+                    &:hover {
+                        background-color: #1d3557;
+                        border: 1px solid #1d3557;
+                    }
+                }
+            }
+            &.grid {
+                grid-template-columns: repeat(3, 32.3%);
+                gap: 0 1.53%;
+                li {
+                    button {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        ol {
+            list-style-type: none;
+            padding: 8px 0;
+            margin: 0;
+            display: grid;
+            li {
+                border: 1px solid #1d3557;
+                margin: 8px 0;
+                padding: 8px 16px;
+                background-color: #FFFFFF;
+                border-radius: 4px;
+                h2 {
+                    font-size: 24px;
+                    color: #1d3557;
+                }
+                p {
+                    color: #000000;
+                }
+                a {
+                    font-size: 18px;
+                    font-weight: 400;
+                    text-decoration: none;
+                    color: #457b9d;
+                    &:hover {
+                        color: #1d3557;
+                    }
+                }
+                form {
+                    input, select {
+                        color: #000000;
+                        padding: 16px 24px;
+                        margin: 8px 0;
+                        font-size: 18px;
+                        font-weight: 400;
+                        border: 1px solid #73777B;
+                        border-radius: 4px;
+                        width: 480px;
+                        display: flex;
+                        justify-content: left;
+                        &:focus {
+                            outline: 0;
+                            border: 1px solid #457b9d;
+                        }
+                        &[type=submit] {
+                            cursor: pointer;
+                            border: 1px solid #457b9d;
+                            background-color: #457b9d;
+                            color: #FFFFFF;
+                            font-weight: 500;
+                            justify-content: center;
+                            &:hover {
+                                border: 1px solid #1d3557;
+                                background-color: #1d3557;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        table {
+            margin: 24px 0;
+            width: 100%;
+            border-collapse: collapse;
+            tr {
+                th, td {
+                    padding: 16px 24px;
+                    border: 1px solid #1d3557;
+                    font-size: 18px;
+                }
+                th {
+                    color: #FFFFFF;
+                    background-color: #1d3557;
+                }
+                td {
+                    color: #000000;
+                    background-color: #FFFFFF;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    header {
+        nav {
+            padding: 24px 24px;
+        }
+    }
+    main {
+        div {
+            padding: 24px 48px;
+            ul {
+                &.grid {
+                    grid-template-columns: repeat(2, 49.5%);
+                    gap: 0 2%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        nav {
+            padding: 24px 0px;
+        }
+    }
+    main {
+        div {
+            padding: 24px 24px;
+            form {
+                input, select {
+                    width: 100%;
+                }
+            }
+            ul {
+                li {
+                    button {
+                        width: 100%;
+                    }
+                }
+                &.grid {
+                    grid-template-columns: repeat(1, 100%);
+                    gap: 0 0%;
+                }
+            }
+            ol {
+                li {
+                    form {
+                        input, select {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

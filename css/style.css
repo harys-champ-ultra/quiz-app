@@ -1,0 +1,327 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;700;800;900&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 auto;
+  background-color: #f1faee;
+}
+
+header {
+  background-color: transparent;
+}
+
+header nav {
+  padding: 24px 72px;
+  margin: 0 auto;
+  max-width: 1440px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav ul li {
+  margin: 0 24px;
+}
+
+header nav ul li a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #457b9d;
+}
+
+header nav ul li a:hover {
+  color: #1d3557;
+}
+
+main {
+  background-color: transparent;
+}
+
+main div {
+  padding: 24px 96px;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+main div h1, main div p {
+  color: #000000;
+}
+
+main div h1 {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48px;
+}
+
+main div p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+main div p a {
+  text-decoration: none;
+  color: #457b9d;
+}
+
+main div p a:hover {
+  color: #1d3557;
+}
+
+main div form {
+  display: -ms-grid;
+  display: grid;
+  padding: 16px 0;
+}
+
+main div form input, main div form select {
+  color: #000000;
+  padding: 16px 24px;
+  margin: 8px 0;
+  font-size: 18px;
+  font-weight: 400;
+  border: 1px solid #73777B;
+  border-radius: 4px;
+  width: 480px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+main div form input:focus, main div form select:focus {
+  outline: 0;
+  border: 1px solid #457b9d;
+}
+
+main div form input[type=submit], main div form select[type=submit] {
+  cursor: pointer;
+  border: 1px solid #457b9d;
+  background-color: #457b9d;
+  color: #FFFFFF;
+  font-weight: 500;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main div form input[type=submit]:hover, main div form select[type=submit]:hover {
+  border: 1px solid #1d3557;
+  background-color: #1d3557;
+}
+
+main div ul {
+  list-style-type: none;
+  padding: 16px 0;
+  margin: 0;
+  display: -ms-grid;
+  display: grid;
+}
+
+main div ul li button {
+  color: #FFFFFF;
+  padding: 16px 24px;
+  margin: 8px 0;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 4px;
+  width: 480px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: auto;
+  cursor: pointer;
+}
+
+main div ul li button img {
+  display: -ms-grid;
+  display: grid;
+  margin: 0 8px;
+}
+
+main div ul li button.solid {
+  border: 1px solid #457b9d;
+  background-color: #457b9d;
+}
+
+main div ul li button.transparent {
+  border: 1px solid #1d3557;
+  background-color: #1d3557;
+}
+
+main div ul li button:hover {
+  background-color: #1d3557;
+  border: 1px solid #1d3557;
+}
+
+main div ul.grid {
+  -ms-grid-columns: (32.3%)[3];
+      grid-template-columns: repeat(3, 32.3%);
+  gap: 0 1.53%;
+}
+
+main div ul.grid li button {
+  width: 100%;
+}
+
+main div ol {
+  list-style-type: none;
+  padding: 8px 0;
+  margin: 0;
+  display: -ms-grid;
+  display: grid;
+}
+
+main div ol li {
+  border: 1px solid #1d3557;
+  margin: 8px 0;
+  padding: 8px 16px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+}
+
+main div ol li h2 {
+  font-size: 24px;
+  color: #1d3557;
+}
+
+main div ol li p {
+  color: #000000;
+}
+
+main div ol li a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #457b9d;
+}
+
+main div ol li a:hover {
+  color: #1d3557;
+}
+
+main div ol li form input, main div ol li form select {
+  color: #000000;
+  padding: 16px 24px;
+  margin: 8px 0;
+  font-size: 18px;
+  font-weight: 400;
+  border: 1px solid #73777B;
+  border-radius: 4px;
+  width: 480px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+main div ol li form input:focus, main div ol li form select:focus {
+  outline: 0;
+  border: 1px solid #457b9d;
+}
+
+main div ol li form input[type=submit], main div ol li form select[type=submit] {
+  cursor: pointer;
+  border: 1px solid #457b9d;
+  background-color: #457b9d;
+  color: #FFFFFF;
+  font-weight: 500;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main div ol li form input[type=submit]:hover, main div ol li form select[type=submit]:hover {
+  border: 1px solid #1d3557;
+  background-color: #1d3557;
+}
+
+main div table {
+  margin: 24px 0;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+main div table tr th, main div table tr td {
+  padding: 16px 24px;
+  border: 1px solid #1d3557;
+  font-size: 18px;
+}
+
+main div table tr th {
+  color: #FFFFFF;
+  background-color: #1d3557;
+}
+
+main div table tr td {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+@media screen and (max-width: 1024px) {
+  header nav {
+    padding: 24px 24px;
+  }
+  main div {
+    padding: 24px 48px;
+  }
+  main div ul.grid {
+    -ms-grid-columns: (49.5%)[2];
+        grid-template-columns: repeat(2, 49.5%);
+    gap: 0 2%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header nav {
+    padding: 24px 0px;
+  }
+  main div {
+    padding: 24px 24px;
+  }
+  main div form input, main div form select {
+    width: 100%;
+  }
+  main div ul li button {
+    width: 100%;
+  }
+  main div ul.grid {
+    -ms-grid-columns: (100%)[1];
+        grid-template-columns: repeat(1, 100%);
+    gap: 0 0%;
+  }
+  main div ol li form input, main div ol li form select {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
